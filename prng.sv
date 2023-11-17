@@ -17,12 +17,10 @@ module prng (
     logic signed [W0+W1-1:0] prod;
     assign prod = $signed(din0) * $signed(din1); // use 18x25 DSP48 multiplier
 
-    int count = 0;
     logic signed [47:0] acc=0;
     always_ff @(posedge clk) begin
         din0 <= dout0;
         din1 <= dout1;
-        count <= count + 1;
         acc <= $signed(prod);
     end
 

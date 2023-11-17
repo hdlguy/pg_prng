@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="1,242,286.574 ns"></ZoomStartTime>
-      <ZoomEndTime time="1,248,151.160 ns"></ZoomEndTime>
-      <Cursor1Time time="9,999,995.000 ns"></Cursor1Time>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="9,999.995001 us"></ZoomEndTime>
+      <Cursor1Time time="0.000000 us"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="248"></NameColumnWidth>
       <ValueColumnWidth column_width="79"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="7" />
+   <WVObjectSize size="3" />
    <wvobject type="logic" fp_name="/lfsr_tb/clk">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -27,31 +27,7 @@
    <wvobject type="array" fp_name="/lfsr_tb/count">
       <obj_property name="ElementShortName">count[31:0]</obj_property>
       <obj_property name="ObjectShortName">count[31:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/lfsr_tb/fd">
-      <obj_property name="ElementShortName">fd[31:0]</obj_property>
-      <obj_property name="ObjectShortName">fd[31:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/lfsr_tb/Nsim">
-      <obj_property name="ElementShortName">Nsim[31:0]</obj_property>
-      <obj_property name="ObjectShortName">Nsim[31:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/lfsr_tb/clk_period">
-      <obj_property name="ElementShortName">clk_period[31:0]</obj_property>
-      <obj_property name="ObjectShortName">clk_period[31:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/lfsr_tb/acc">
-      <obj_property name="ElementShortName">acc[47:0]</obj_property>
-      <obj_property name="ObjectShortName">acc[47:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-      <obj_property name="CellHeight">100</obj_property>
-      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
-      <obj_property name="AnalogYRangeMin">0.000000</obj_property>
-      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
-      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_HOLD</obj_property>
-      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
-      <obj_property name="AnalogHorizLine">0.000000</obj_property>
-      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/lfsr_tb/dout">
       <obj_property name="ElementShortName">dout[31:0]</obj_property>
