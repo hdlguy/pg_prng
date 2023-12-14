@@ -7,5 +7,5 @@ A simulation test bench is provided which saves the sequence to a file.  Then an
 
 It is pretty good.
 
-
+![plot](./prng_plot.png)
 

@@ -20,7 +20,7 @@ title("historgram of Verilog simulation");
 
 subplot(4,1,3);
 plot(x2, 'r*-');
-title("autocorrelation of Octave rand()");
+title("autocorrelation of Octave rand()\nMersenne Twister: A 623-dimensionally equidistributed uniform pseudorandom number generator");
 subplot(4,1,4);
 hist(s2, 100);
 title("historgram of Octave rand()");
