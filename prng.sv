@@ -1,21 +1,23 @@
 // a simple fast prng with good statistics
-module prng (
-    input   logic       clk,
-    output  logic[31:0] dout
+module prng #(
+    parameter int   W0 = 18, // up to 18x25 fits in a single DSP48
+    parameter int   W1 = 25,
+    parameter int   Wout = 32,
+    parameter int   Init0 = 1,
+    parameter int   Init1 = 1    
+) (
+    input   logic               clk,
+    output  logic[Wout-1:0]     dout
 );
-
-    localparam int W0 = 18;
-    localparam int W1 = 25;
-    localparam int Wout = 32;
-
-    logic [W0-1:0] din0=1, dout0;
-    logic [W1-1:0] din1=1, dout1;
+    
+    logic [W0-1:0] din0 = Init0, dout0;
+    logic [W1-1:0] din1 = Init1, dout1;
     
     lfsr #(.WIDTH(W0)) lfsr0 (.datain(din0), .dataout(dout0));
     lfsr #(.WIDTH(W1)) lfsr1 (.datain(din1), .dataout(dout1));
 
     logic signed [W0+W1-1:0] prod;
-    assign prod = $signed(din0) * $signed(din1); // use 18x25 DSP48 multiplier
+    assign prod = $signed(din0) * $signed(din1); // DSP48 multiplier
 
     logic signed [47:0] acc=0;
     always_ff @(posedge clk) begin

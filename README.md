@@ -1,4 +1,4 @@
-# pg_prng
+# pg_prng - the pretty good pseudo-random number generator
 This is a very light weight fpga pseudorandom number generator.
 
 This pseudorandom number generator is designed to be efficient and fast when implemented in fpga logic.
