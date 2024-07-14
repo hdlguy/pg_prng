@@ -1,7 +1,9 @@
-clear; 
+clear;
 
 % data from verilog simulation
-s=load("-ascii", "prng_dout.txt"); 
+data=load("-ascii", "prng_dout.txt");
+
+s = data(:,1);
 N = length(s);
 s=s/(2^31)-1;       % normalize
 x=conv(s, flip(s)); % autocorrelation
